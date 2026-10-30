@@ -1,5 +1,5 @@
 // Canalboater Sim service worker — cache-first offline support
-const CACHE = 'cbs-v2.9-mvu67zmw';
+const CACHE = 'cbs-v2.9-mvudbtn1';
 const FILES = ['./', './index.html', './game.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())); });
 const MCACHE = 'cbs-music-v1'; // music tracks are cached as they are first played and kept across game updates
